@@ -6,7 +6,7 @@ function putPictures(){
     }
     position.sort(() => Math.random()-0.5);
     for (let i=1; i < 13; i++){ 
-       document.getElementById(i).style.background=`url( /memoryPictures/${position[i-1]}.jpg)`;  
+       document.getElementById(i).style.background=`url(./memoryPictures/${position[i-1]}.jpg)`;  
        document.getElementById(i).style.backgroundRepeat="no-repeat";
        document.getElementById(i).style.backgroundSize="250px 250px";
     }
