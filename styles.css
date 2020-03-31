@@ -1,50 +1,122 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-.title{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 60px;
-    text-align: center;
+  align-items: center;
+  background-color: #171717;
 }
-.cardRow{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-left: -2%;
-    perspective: 1000000px;
+.formWrapper {
+  padding: 20px;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  position: top 50vh;
+  align-items: center;
+  justify-content: center;
+  border: solid white 2px;
+  text-align: center;
 }
-.oneCard{
-    display: block;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    min-width: 250px;
-    min-height: 250px;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+.welcomeLetter {
+  font-size: 35px;
+}
+.name {
+  border: none;
+  background: none;
+  border-bottom: solid white 1px;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 0;
+  outline: none;
+  color: white;
+}
+.pairs {
+  margin-top: 15px;
+  border: none;
+  background: none;
+  border-bottom: solid white 1px;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 0;
+  outline: none;
+  color: white;
+}
+.nextStep {
+  color: white;
+  background: none;
+  display: block;
+  margin-top: 10%;
+  font-size: 40px;
+  cursor: pointer;
+  outline: none;
+}
+form {
+  border: solid white 2px;
+}
+.title {
+  font-size: 80px;
+  text-align: center;
+}
+.cardRow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: -2%;
+  perspective: 1000000px;
+}
+.oneCard {
+  display: block;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  min-width: 250px;
+  min-height: 250px;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
 
-.front{
-    background-color: #26F9AD;
-    background-size: 250px 250px;
-    position: absolute;
-    min-width: 250px;
-    min-height: 250px;
-    backface-visibility: hidden;
-    border: solid #F92672  5px;
+.front {
+  background-color: #658b7d;
+  background-size: 250px 250px;
+  position: absolute;
+  min-width: 250px;
+  min-height: 250px;
+  backface-visibility: hidden;
+  border: solid #990000 5px;
 }
-.back{
-    /*background: url("./memoryPictures/banan.jpg");*/
-    background-repeat: no-repeat;
-    background-size: 250px 250px;
-    position: absolute;
-    min-width: 250px;
-    min-height: 250px;
-    transform: rotateY( 180deg );
-    backface-visibility: hidden;
+.back {
+  border: solid #990000 5px;
+  background: url("./memoryPictures/banan.jpg");
+  background-repeat: no-repeat;
+  background-size: 250px 250px;
+  position: absolute;
+  min-width: 250px;
+  min-height: 250px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
 
 .oneCard.flipped {
-    transform: rotateY(180deg);
-  }
-  .oneCard.flippedForever{
-      transform: rotateY(180deg);
-  }
+  transform: rotateY(180deg);
+}
+.oneCard.flippedForever {
+  transform: rotateY(180deg);
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movesCounterName {
+  font-size: 50px;
+  margin-right: 30px;
+}
+.movesCounter {
+  font-size: 50px;
+}
+.finishedGame {
+  font-size: 50px;
+}
