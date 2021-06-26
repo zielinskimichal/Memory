@@ -9,8 +9,8 @@ body {
   background-color: #171717;
 }
 .formWrapper {
-  height: 500px;
-  width: 400px;
+  height: 65vh;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   position: top 50vh;
@@ -19,9 +19,9 @@ body {
   border: solid white 2px;
   border-radius: 25px;
   text-align: center;
+  font-size: 5vw;
 }
 .welcomeLetter {
-  font-size: 20px;
   text-align: center;
   line-height: 1.75em;
   padding: 0.65em;
@@ -31,7 +31,7 @@ body {
   border: none;
   background: none;
   border-bottom: solid white 1px;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   padding: 5px;
   border-radius: 0;
   outline: none;
@@ -47,7 +47,7 @@ body {
   border-bottom: solid white 1px;
   font-size: 1.1rem;
   margin-top: 1.4em;
-
+  font-size: 0.8rem;
   padding: 5px;
   border-radius: 0;
   outline: none;
@@ -62,7 +62,8 @@ body {
   display: block;
   padding: 0.4em;
   margin-top: 0.4em;
-  font-size: 2rem;
+  font-size: 1.7rem;
+
   cursor: pointer;
   outline: none;
   border: none;
@@ -70,7 +71,7 @@ body {
 }
 
 .title {
-  font-size: 80px;
+  font-size: 10vw;
   line-height: 1.25em;
   text-align: center;
 }
@@ -140,4 +141,42 @@ body {
   padding: 1em;
   line-height: 1.3em;
   text-align: center;
+}
+@media (min-width: 400px) {
+  .title {
+    font-size: 7vw;
+  }
+  .formWrapper {
+    margin-top: 8vh;
+    font-size: 3vw;
+    max-width: 500px;
+    padding: 0;
+  }
+  .welcomeLetter {
+    margin-bottom: 10vh;
+  }
+  .name {
+    margin-bottom: 1.5vh;
+  }
+  .pairs {
+    margin-bottom: 1.5vh;
+  }
+}
+@media (min-width: 700px) {
+  .title {
+    font-size: 7vw;
+  }
+  .formWrapper {
+    font-size: 2vw;
+    max-width: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  .title {
+    font-size: 5vw;
+  }
+  .formWrapper {
+    font-size: 1.3vw;
+    max-width: 500px;
+  }
 }
