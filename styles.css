@@ -4,12 +4,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
+  font-family: "Press Start 2P", cursive;
   align-items: center;
   background-color: #171717;
 }
 .formWrapper {
-  padding: 20px;
   height: 500px;
   width: 400px;
   display: flex;
@@ -18,46 +17,61 @@ body {
   align-items: center;
   justify-content: center;
   border: solid white 2px;
+  border-radius: 25px;
   text-align: center;
 }
 .welcomeLetter {
-  font-size: 35px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.75em;
+  padding: 0.65em;
+  padding-bottom: 0.05em;
 }
 .name {
   border: none;
   background: none;
   border-bottom: solid white 1px;
-  font-size: 25px;
+  font-size: 1.1rem;
   padding: 5px;
   border-radius: 0;
   outline: none;
   color: white;
+  font-family: inherit;
+  text-align: center;
 }
+
 .pairs {
-  margin-top: 15px;
+  margin-top: 5px;
   border: none;
   background: none;
   border-bottom: solid white 1px;
-  font-size: 25px;
+  font-size: 1.1rem;
+  margin-top: 1.4em;
+
   padding: 5px;
   border-radius: 0;
   outline: none;
   color: white;
+  font-family: inherit;
+  text-align: center;
 }
 .nextStep {
+  font-family: inherit;
   color: white;
   background: none;
   display: block;
-  margin-top: 10%;
-  font-size: 40px;
+  padding: 0.4em;
+  margin-top: 0.4em;
+  font-size: 2rem;
   cursor: pointer;
   outline: none;
+  border: none;
+  border-bottom: solid white 2px;
 }
-form {
-  border: solid white 2px;
-}
+
 .title {
   font-size: 80px;
+  line-height: 1.25em;
   text-align: center;
 }
 .cardRow {
@@ -76,26 +90,29 @@ form {
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
+  transform: translateX(-10px);
 }
 
 .front {
-  background-color: #658b7d;
+  background-color: hsl(209, 87%, 53%);
   background-size: 250px 250px;
   position: absolute;
   min-width: 250px;
   min-height: 250px;
   backface-visibility: hidden;
-  border: solid #990000 5px;
+  border: solid #d3d2d2 5px;
+  border-radius: 10px;
 }
 .back {
-  border: solid #990000 5px;
-  background: url("./memoryPictures/banan.jpg");
+  border: solid #d3d2d2 5px;
+  border-radius: 10px;
   background-repeat: no-repeat;
   background-size: 250px 250px;
   position: absolute;
   min-width: 250px;
   min-height: 250px;
   transform: rotateY(180deg);
+
   backface-visibility: hidden;
 }
 
@@ -115,8 +132,12 @@ form {
   margin-right: 30px;
 }
 .movesCounter {
+  margin-top: 15px;
   font-size: 50px;
 }
 .finishedGame {
-  font-size: 50px;
+  font-size: 2.5rem;
+  padding: 1em;
+  line-height: 1.3em;
+  text-align: center;
 }

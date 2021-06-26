@@ -1,4 +1,4 @@
-let name;
+let name ="";
 let numberOfPairs;
 let cardPosition = [];
 let idsToCheck = [];
@@ -11,6 +11,12 @@ function initMemory() {
     e.preventDefault();
     name = document.querySelector(".name").value;
     numberOfPairs = document.querySelector(".pairs").value;
+
+   
+    if(numberOfPairs>0 && isInt(numberOfPairs) && name!==""){
+    
+    
+    
     let temp = document.querySelector("form");
     temp.parentNode.removeChild(temp);
     temp = document.querySelector("body");
@@ -41,8 +47,11 @@ function initMemory() {
     newWrapper.appendChild(newElement);
     newElement.innerHTML = movesCounter;
     setClicksOnCards();
-    getPictures();
+    getPictures();}
   });
+}
+function isInt(value) {
+  return /^-?\d+$/.test(value);
 }
 
 function getPictures() {
@@ -140,7 +149,7 @@ function gameOver() {
   temp.parentNode.removeChild(temp);
   temp = document.createElement("div");
   temp.classList.add("finishedGame");
-  temp.innerHTML = `Brawo ${name}! Udało Ci się wygrać w ${movesCounter} ruchach! Aby zagrać jeszcze raz odśwież stronę.`;
+  temp.innerHTML = `Well done ${name}! You've finished the game in ${movesCounter} moves! Please refresh the website to play again.`;
   document.querySelector("body").appendChild(temp);
 }
 
