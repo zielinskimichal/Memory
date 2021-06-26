@@ -40,7 +40,7 @@ function initMemory() {
     document.querySelector("body").appendChild(newWrapper);
     let newMovesInfo = document.createElement("div");
     newMovesInfo.classList.add("movesCounterName");
-    newMovesInfo.innerHTML = "Liczba ruchów:";
+    newMovesInfo.innerHTML = "Moves:";
     newWrapper.appendChild(newMovesInfo);
     let newElement = document.createElement("div");
     newElement.classList.add("movesCounter");
